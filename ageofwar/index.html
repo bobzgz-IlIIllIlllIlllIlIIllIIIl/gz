@@ -5,7 +5,7 @@
     </head>
     <body>
         <div id='ruffle'></div>
-        <script src='/ruffle/ruffle.js'></script>
+        <script src='/ruffle/ruffle/index.js'></script>
         <script>
 var swfobject = {};
 
@@ -18,7 +18,7 @@ swfobject.embedSWF = function(url, cont, width, height){
     player.load({ url: url });
 }
 
-swfobject.embedSWF('https://www-sites-opensocial.googleusercontent.com/gadgets/proxy/refresh=3600&container=enterprise/https://sites.google.com/site/unblockedgames25h/up-games/age-of-war-1.swf', 'ruffle', 500, 500);
+swfobject.embedSWF('game.swf', 'ruffle', 500, 500);
         </script>
     </body>
 </html>

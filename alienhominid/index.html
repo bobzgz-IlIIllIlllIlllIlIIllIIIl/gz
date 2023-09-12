@@ -5,7 +5,7 @@
     </head>
     <body>
         <div id='ruffle'></div>
-        <script src='https://maddox.page/ruffle-example/ruffle/index.js'></script>
+        <script src='/ruffle/ruffle/index.js'></script>
         <script>
 var swfobject = {};
 
@@ -18,7 +18,7 @@ swfobject.embedSWF = function(url, cont, width, height){
     player.load({ url: url });
 }
 
-swfobject.embedSWF('alien_hominid.swf', 'ruffle', 500, 500);
+swfobject.embedSWF('game.swf', 'ruffle', 500, 500);
         </script>
     </body>
 </html>
