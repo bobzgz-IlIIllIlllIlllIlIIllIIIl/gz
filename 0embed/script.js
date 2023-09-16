@@ -4,6 +4,7 @@ function play(){
 }
 
 function getStorage(){
+	console.log("getting storage")
 	return (JSON.stringify(localStorage))
 }
 
@@ -17,8 +18,10 @@ function loadStorage(str) {
 window.addEventListener(
   "message",
   (event) => {
+	  console.log("got request")
 			if (event.data[0] == "getData"){
 				//document.getElementById("p").innerText = ("getting")
+				console.log("posting message")
 				window.parent.postMessage("data+"+getStorage());
 			} else if (event.data[0] == "loadData"){
 				//document.getElementById("p").innerText = ("loading")
