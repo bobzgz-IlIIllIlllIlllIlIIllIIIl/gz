@@ -20,12 +20,9 @@ window.addEventListener(
   (event) => {
 	  console.log("got request")
 			if (event.data[0] == "getData"){
-				//document.getElementById("p").innerText = ("getting")
 				console.log("posting message")
-				window.parent.postMessage("data+"+getStorage());
+				parent.postMessage("data+"+getStorage(),"*");
 			} else if (event.data[0] == "loadData"){
-				//document.getElementById("p").innerText = ("loading")
-				//console.log(event.data[1])
 				loadStorage(event.data[1])
 				window.location.reload()
 				//reload game
